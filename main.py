@@ -24,6 +24,12 @@ while run:
     if keys[pygame.K_RIGHT]:
         image_rect.x += speed
 
+    if keys[pygame.K_UP]:
+        image_rect.y -= speed
+
+    if keys[pygame.K_DOWN]:
+        image_rect.y += speed
+
     screen.fill((0, 0, 0))
     screen.blit(image, image_rect)
     pygame.display.flip()
